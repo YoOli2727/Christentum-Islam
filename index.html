@@ -58,15 +58,19 @@
       background-color: #f9f9f9;
       border-radius: 5px;
     }
+
+    /* Neue Bildanzeige: horizontal scrollbar */
     .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 10px;
       margin-top: 10px;
     }
     .image-container {
-      width: 23%;
-      min-width: 200px;
+      display: inline-block;
+      vertical-align: top;
+      width: 200px;
+      margin-right: 10px;
     }
     .image-container img {
       width: 100%;
@@ -93,39 +97,39 @@
   <!-- Christentum Section -->
   <section class="religion-section">
     <div class="religion-header christianity-header">Christentum</div>
-    <button class="accordion-toggle">Alle Themen</button>
+    <button class="accordion-toggle">Kirchenväter</button>
     <div class="accordion-content">
 
       <!-- Thema 1 -->
-      <button class="accordion-toggle">Kirchenväter über Trinität</button>
+      <button class="accordion-toggle">Trinität</button>
       <div class="accordion-content">
         <div class="topic">
-          <h2>Kirchenväter über Trinität</h2>
+          <h2>Trinität</h2>
           <p>Was sagen die frühsten Quellen über die Trinität?</p>
           <div class="image-gallery">
-            <div class="image-container"><img src="images/christianity/Barnabas (5 v. Chr – 61 n. Chr).jpg"><div class="image-caption">Barnabas</div><div class="source">5 v. Chr – 61 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Clemens von Rom (35-99 n. Chr).jpg"><div class="image-caption">Clemens von Rom</div><div class="source">35–99 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Ignatius von Antiochien (35–107 n. Chr).jpg"><div class="image-caption">Ignatius von Antiochien</div><div class="source">35–107 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Die Didache (50-150 n. Chr).jpg"><div class="image-caption">Die Didache</div><div class="source">50–150 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Aristides von Athen (100 – 150 n. Chr).jpg"><div class="image-caption">Aristides von Athen</div><div class="source">100–150 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Justin der Märtyrer (100-165 n. Chr).jpg"><div class="image-caption">Justin der Märtyrer</div><div class="source">100–165 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Polykarp von Smyrna (69-155 n. Chr).jpg"><div class="image-caption">Polykarp von Smyrna</div><div class="source">69–155 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Melito von Sardes (90-180 n. Chr).jpg"><div class="image-caption">Melito von Sardes</div><div class="source">90–180 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Athenagoras von Athens (133–190 n. Chr).jpg"><div class="image-caption">Athenagoras von Athen</div><div class="source">133–190 n. Chr</div></div>
-            <div class="image-container"><img src="images/christianity/Theophilus von Antiochien († um 183 n. Chr).jpg"><div class="image-caption">Theophilus von Antiochien</div><div class="source">† um 183 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Barnabas (5 v. Chr – 61 n. Chr).jpg" loading="lazy"><div class="image-caption">Barnabas</div><div class="source">5 v. Chr – 61 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Clemens von Rom (35-99 n. Chr).jpg" loading="lazy"><div class="image-caption">Clemens von Rom</div><div class="source">35–99 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Ignatius von Antiochien (35–107 n. Chr).jpg" loading="lazy"><div class="image-caption">Ignatius von Antiochien</div><div class="source">35–107 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Die Didache (50-150 n. Chr).jpg" loading="lazy"><div class="image-caption">Die Didache</div><div class="source">50–150 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Aristides von Athen (100 – 150 n. Chr).jpg" loading="lazy"><div class="image-caption">Aristides von Athen</div><div class="source">100–150 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Justin der Märtyrer (100-165 n. Chr).jpg" loading="lazy"><div class="image-caption">Justin der Märtyrer</div><div class="source">100–165 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Polykarp von Smyrna (69-155 n. Chr).jpg" loading="lazy"><div class="image-caption">Polykarp von Smyrna</div><div class="source">69–155 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Melito von Sardes (90-180 n. Chr).jpg" loading="lazy"><div class="image-caption">Melito von Sardes</div><div class="source">90–180 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Athenagoras von Athens (133–190 n. Chr).jpg" loading="lazy"><div class="image-caption">Athenagoras von Athen</div><div class="source">133–190 n. Chr</div></div>
+            <div class="image-container"><img data-src="images/christianity/Theophilus von Antiochien († um 183 n. Chr).jpg" loading="lazy"><div class="image-caption">Theophilus von Antiochien</div><div class="source">† um 183 n. Chr</div></div>
           </div>
         </div>
       </div>
 
       <!-- Thema 2 -->
-      <button class="accordion-toggle">Test 2</button>
+      <button class="accordion-toggle">Eucharistie</button>
       <div class="accordion-content">
         <div class="topic">
-          <h2>Test 2</h2>
-          <p>Beschreibung christlicher Architektur...</p>
+          <h2>Eucharistie</h2>
+          <p>Was sagen die frühsten Quellen über die Eucharistie?</p>
           <div class="image-gallery">
-            <div class="image-container"><img src="images/christianity/cathedral.jpg"><div class="image-caption">Gothic Cathedral</div><div class="source">European Architecture Encyclopedia</div></div>
-            <div class="image-container"><img src="images/christianity/church.jpg"><div class="image-caption">Moderne Kirche</div><div class="source">Contemporary Religious Architecture</div></div>
+            <div class="image-container"><img data-src="images/christianity/cathedral.jpg" loading="lazy"><div class="image-caption">Gothic Cathedral</div><div class="source">European Architecture Encyclopedia</div></div>
+            <div class="image-container"><img data-src="images/christianity/church.jpg" loading="lazy"><div class="image-caption">Moderne Kirche</div><div class="source">Contemporary Religious Architecture</div></div>
           </div>
         </div>
       </div>
@@ -136,7 +140,7 @@
   <!-- Islam Section -->
   <section class="religion-section">
     <div class="religion-header islam-header">Islam</div>
-    <button class="accordion-toggle">Alle Themen</button>
+    <button class="accordion-toggle">Allahs Attribute</button>
     <div class="accordion-content">
 
       <!-- Thema 1 -->
@@ -144,12 +148,12 @@
       <div class="accordion-content">
         <div class="topic">
           <h2>Allah Joggt</h2>
-          <p>Allahs Attribute des Joggens</p>
+          <p>Kann Allah joggen?</p>
           <div class="image-gallery">
-            <div class="image-container"><img src="images/islam/T1I1.png"><div class="image-caption"></div><div class="source">Sahih al-Bukhari, Band 9, Seite 301, 386, 387</div></div>
-            <div class="image-container"><img src="images/islam/T1I2.png"><div class="image-caption"></div><div class="source">Fatawa Al-Albani, Seite 506</div></div>
-            <div class="image-container"><img src="images/islam/T1I3.png"><div class="image-caption"></div><div class="source">Fatawa al-Aqida von Muhammad ibn Al-Uthaymeen, Seite 112</div></div>
-            <div class="image-container"><img src="images/islam/T1I4.png"><div class="image-caption"></div><div class="source">Quelle im Bild</div></div>
+            <div class="image-container"><img data-src="images/islam/T1I1.png" loading="lazy"><div class="image-caption"></div><div class="source">Sahih al-Bukhari, Band 9, Seite 301, 386, 387</div></div>
+            <div class="image-container"><img data-src="images/islam/T1I2.png" loading="lazy"><div class="image-caption"></div><div class="source">Fatawa Al-Albani, Seite 506</div></div>
+            <div class="image-container"><img data-src="images/islam/T1I3.png" loading="lazy"><div class="image-caption"></div><div class="source">Fatawa al-Aqida von Muhammad ibn Al-Uthaymeen, Seite 112</div></div>
+            <div class="image-container"><img data-src="images/islam/T1I4.png" loading="lazy"><div class="image-caption"></div><div class="source">Quelle im Bild</div></div>
           </div>
         </div>
       </div>
@@ -161,8 +165,8 @@
           <h2>Test 2</h2>
           <p>Beschreibung islamischer Architektur...</p>
           <div class="image-gallery">
-            <div class="image-container"><img src="images/islam/mosque.jpg"><div class="image-caption">Traditional Mosque</div><div class="source">Islamic Architecture Through Ages</div></div>
-            <div class="image-container"><img src="images/islam/minaret.jpg"><div class="image-caption">Detailed Minaret Design</div><div class="source">Architectural Elements of Islam</div></div>
+            <div class="image-container"><img data-src="images/islam/mosque.jpg" loading="lazy"><div class="image-caption">Traditional Mosque</div><div class="source">Islamic Architecture Through Ages</div></div>
+            <div class="image-container"><img data-src="images/islam/minaret.jpg" loading="lazy"><div class="image-caption">Detailed Minaret Design</div><div class="source">Architectural Elements of Islam</div></div>
           </div>
         </div>
       </div>
@@ -179,13 +183,20 @@
   document.querySelectorAll('.accordion-toggle').forEach(button => {
     button.addEventListener('click', () => {
       const content = button.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
+      const isVisible = content.style.display === "block";
+      content.style.display = isVisible ? "none" : "block";
+
+      if (!isVisible) {
+        // Lazy Load Images
+        content.querySelectorAll('img[data-src]').forEach(img => {
+          if (!img.src) {
+            img.src = img.dataset.src;
+          }
+        });
       }
     });
   });
 </script>
+
 </body>
 </html>
